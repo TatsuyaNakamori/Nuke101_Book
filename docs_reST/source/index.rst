@@ -1,25 +1,19 @@
 .. Created by sphinx-quickstart.
 
-Welcome to My Document's documentation!
-#######################################
+Nuke101
+#######
 
-Latest update date of the document: [|today|]
-
-| This document is available in English and Japanese.Please start from the "Overview" link below.
-| このドキュメントは英語と日本語が用意されています。下記のリンクの「概要」からスタートしてください。
+最終更新日: [|today|]
 
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents (English):
+   :caption: 目次:
 
-   en/sec01_overview/index
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents (Japanese):
-
+   jp/sec00_introduction/index
    jp/sec01_overview/index
+   jp/sec02_firstComp/index
+   jp/sec99_other/index
 
 
 Indices and tables
