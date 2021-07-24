@@ -18,7 +18,7 @@ import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
-project = 'My Document'
+project = 'Nuke101/はじめてのNuke'
 copyright = '2021, Tatsuya Nakamori'
 author = 'Tatsuya Nakamori'
 
@@ -47,7 +47,7 @@ templates_path = ['_templates']
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = 'en'
+language = 'ja'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -72,3 +72,31 @@ html_css_files = [
     'custom.css',
 ]
 
+
+
+# -- Options for LaTeX output -------------------------------------------------
+
+# (A) LuaLaTeXを使用する
+latex_engine = 'lualatex'
+
+# (B) LaTeXドキュメントクラスとしてltjsbookを使用する
+latex_docclass = {'manual': 'ltjsbook'}
+
+latex_elements = {
+    # (C) Polyglossiaパッケージを読み込まないようにする
+    'polyglossia': '',
+
+    # (D) サンセリフ系フォント、ゴシック系フォントを指定する（AXISフォントを使用するため）
+    'fontpkg': r'''
+\usepackage[no-math,scale=1.0]{luatexja-fontspec}
+\setsansfont{NotoSansCJKjp-Regular.otf}[BoldFont = NotoSansCJKjp-Bold.otf]
+\setsansjfont{NotoSansCJKjp-Regular.otf}[BoldFont = NotoSansCJKjp-Bold.otf]
+''',
+
+   # (E) デフォルトのフォントをサンセリフ系、ゴシック系に変更する（AXISフォントを使用するため）
+   'preamble': r'''
+\renewcommand\familydefault{\sfdefault}
+\renewcommand\kanjifamilydefault{\gtdefault}
+'''
+
+}

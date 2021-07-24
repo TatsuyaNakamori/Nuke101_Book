@@ -3,7 +3,7 @@
 正誤表
 ######
 
-.. contents:: このページの目次
+.. contents:: このページの目次:
    :depth: 2
    :local:
 

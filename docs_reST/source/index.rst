@@ -1,10 +1,11 @@
 .. Created by sphinx-quickstart.
 
-Nuke101
-#######
+Nuke101/ はじめてのNuke
+#######################
 
 最終更新日: [|today|]
 
+[[ **編集中** ]]
 
 .. toctree::
    :maxdepth: 2
