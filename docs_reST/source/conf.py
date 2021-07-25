@@ -27,7 +27,8 @@ version = '0.1'
 
 # The full version, including alpha/beta/rc tags
 import time
-release = time.strftime('%Y-%m-%d')
+# release = time.strftime('%Y-%m-%d')
+release = '0.1 - WIP'  # 編集中は固定にする
 
 
 # -- General configuration ---------------------------------------------------
