@@ -9,4 +9,4 @@
    releaseNotes
    license
    donations
-   donations
+   contribution

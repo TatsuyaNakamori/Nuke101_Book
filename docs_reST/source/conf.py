@@ -18,7 +18,7 @@ import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
-project = 'Nuke101/はじめてのNuke'
+project = 'Nuke101'
 copyright = '2021, Tatsuya Nakamori'
 author = 'Tatsuya Nakamori'
 
