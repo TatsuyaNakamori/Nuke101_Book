@@ -5,12 +5,35 @@
 
 まず始めにノードツールバーにある上から1番目のボタンを押し **Read** ボタンから素材の読み込みを行います。
 
-.. figure::  ./../../_images/chromakey/chromakey_001.png
+   .. figure:: ./../../_images/chromakey/chromakey_001.png
+      :scale: 100%
+      :alt: image01 
+      :target: path 
+
+
+ 　ノードグラフ上でキーボードの **Sキー** を押します。プロパティパネルにプロジェクトセッティングパネルが表示されます。
+ この素材は72フレームの24fpsでサイズのフォーマットはHD_1080 1920×1080なので画像1のようにプロジェクトセッティングパネルに変更を行います。 
+
+.. figure:: ./../../_images/chromakey/chromakey_004.png
    :scale: 50%
-   :alt: image01 
+   :alt: chromakey_004.png 
+   :target: path 
+
+このカラースペースのの設定のまま作業を行うと素材が暗くなってしまうのでカラースペースの変更を行います。
+先程のプロジェクトセッティングパネルから **color** のタブを開き画像のように変更を行います。
+
+.. figure:: ./../../_images/chromakey/chromakey_002.png
+   :scale: 50%
+   :alt: chromakey_002.png 
    :target: path
 
-   
+次に、ノードグラフ上にある素材をダブルクリックしプロパティパネルを開き画像のようにカラースペースの変更を行います。
+
+.. figure:: ./../../_images/chromakey/chromakey_003.png
+   :scale: 50%
+   :alt: chromakey_003.png 
+   :target: path
+
 
 
 
