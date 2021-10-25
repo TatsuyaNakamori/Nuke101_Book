@@ -113,4 +113,19 @@
 
 トラッキングデータを使って背景の写真立てに写真素材をコンポジットします。
 
-1. 
+1. 先ほど作成した写真素材をMerge(plus)で元素材と繋ぎます。plusにすることで写真立ての反射を入れることが出来ます
+2. 写真素材にトラッキングデータを繋ぎます。
+
+
+.. figure:: ./../../_images/tracking2D/tracking2D_014.png
+   :scale: 100%
+   :alt: image01
+   :target: path
+
+
+3. こちら完成画像です
+
+.. figure:: ./../../_images/tracking2D/tracking2D_015.png
+   :scale: 100%
+   :alt: image01
+   :target: path
