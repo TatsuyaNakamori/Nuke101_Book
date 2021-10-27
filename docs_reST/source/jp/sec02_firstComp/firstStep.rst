@@ -272,11 +272,155 @@ Nukeのディフォルトの色を残しておくことで、大まかに何の�
    :target: path 
 
 
-分かりやすいノードの並べ方
+分かりやすいノードの並べ方①
 *************** 
 
 1. Nukeは自由にノードを並べられるので、組織でルールを決めておかないと、レイアウトがバラバラで見ずらいものになってしまいます。
 2. 基本的な方針を予め決めておきましょう。
+
+.. figure:: ./../../_images/firstComp/firstComp_021.png
+   :scale: 10%
+   :alt: firstComp_021.png
+   :target: path 
+
+
+分かりやすいノードの並べ方②
+*************** 
+
+基本はプログラミングのフローチャートを参考にします。 
+1. 上から下へ
+2. 分岐するときは右に流れる
+3. 合流するときは左へ
+
+
+ノード間の矢印を直角にする
+*************** 
+
+1. Ctrlボタンを押すと矢印の中間に黄色い短形が表示される。
+2. 黄色の短形をクリックする。
+3. Dotが追加される
+4. Dotをドラックし、矢印を直角にする
+
+
+.. figure:: ./../../_images/firstComp/firstComp_022.png
+   :scale: 10%
+   :alt: firstComp_022.png
+   :target: path 
+
+
+.. figure:: ./../../_images/firstComp/firstComp_023.png
+   :scale: 10%
+   :alt: firstComp_023.png
+   :target: path 
+
+
+writeノードを接続する
+*************** 
+
+1. Mergeノードを選択し、writeノードを作ります。(ショートカットキー **W** )
+
+.. figure:: ./../../_images/firstComp/firstComp_024.png
+   :scale: 10%
+   :alt: firstComp_024.png
+   :target: path 
+
+
+2. プロパティの **file** の右側にあるフォルダアイコンをクリックし、ダイアログを開きます。
+
+.. figure:: ./../../_images/firstComp/firstComp_025.png
+   :scale: 10%
+   :alt: firstComp_025.png
+   :target: path 
+
+3. 階層をたどり、出力するファイル名を記述しSaveボタンを押します。
+
+.. figure:: ./../../_images/firstComp/firstComp_026.png
+   :scale: 10%
+   :alt: firstComp_026.png
+   :target: path 
+
+
+4. ファイル名が設定されると、拡張子を判別し、書き出しのオプションが自動設定されます。
+
+.. figure:: ./../../_images/firstComp/firstComp_027.png
+   :scale: 10%
+   :alt: firstComp_027.png
+   :target: path 
+
+5. writeノードに、書き出させるファイル名が表示されます。
+
+.. figure:: ./../../_images/firstComp/firstComp_028.png
+   :scale: 10%
+   :alt: firstComp_028.png
+   :target: path 
+
+
+writeノードの連番の桁数指定の仕方
+*************** 
+
+・ 静止画連番の場合の、連番の桁数指定
+
+ 1. **#** を使う(桁数分、並べる)
+ ・[4桁]filename. **####** .png
+
+ 2. **%0[桁数]d** という書き方(プログラミングのゼロパティングの書き方)
+ ・[4桁]filename. **%04d** .png 
+ ・[10桁]filename. **%010d** .png
+
+
+writeノードのプロパティ(注意点)
+*************** 
+
+・チャンネル設定 
+
+1. デフォルトでは、 **rgb** になっておりαチャンネルが出力されないようになっています。
+
+.. figure:: ./../../_images/firstComp/firstComp_029.png
+   :scale: 10%
+   :alt: firstComp_029.png
+   :target: path 
+
+
+2. コンボボックスの項目を **rgba** に設定するとαチャンネルが出力されるようになります。
+
+.. figure:: ./../../_images/firstComp/firstComp_030.png
+   :scale: 10%
+   :alt: firstComp_030.png
+   :target: path 
+
+.. figure:: ./../../_images/firstComp/firstComp_031.png
+   :scale: 10%
+   :alt: firstComp_031.png
+   :target: path 
+
+
+書き出し
+*******
+
+1. **create directories** にチェックを入れると、フォルダが存在しない時に自動的に作ってくれます。(フォルダが存在しないと、エラーで止まってしまうで止まってしまう)
+2. **Render** ボタンを押し、ダイヤログの情報を確認します。
+3. OKボタンを押して、レンダリングを開始します。
+
+.. figure:: ./../../_images/firstComp/firstComp_032.png
+   :scale: 10%
+   :alt: firstComp_032.png
+   :target: path 
+
+
+.. figure:: ./../../_images/firstComp/firstComp_033.png
+   :scale: 10%
+   :alt: firstComp_033.png
+   :target: path 
+
+
+writeノード2
+*******
+
+・今度はmov形式で書き出しをしてみます。
+
+1. writeノードを追加します。
+2. 書き出すフォルダ/ファイル名を指定します。(ファイル名の拡張子は **mov** にします。)
+3. プロパティの、その他のオプションは必要に応じて変更し、レンダリングを行います。
 
 
 
