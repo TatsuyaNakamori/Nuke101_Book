@@ -37,6 +37,11 @@
 1. 整列させたいノードを選択する。
 2. **Edit>Node>Autoplace** で整列させるか、NodeGraph上でショートカットキー **L** を押します。
 
+.. figure:: ./../../_images/firstComp/firstComp_034.png
+   :scale: 10%
+   :alt: firstComp_034.png
+   :target: path 
+
 
 ビューアに表示する①
 **************** 
@@ -140,7 +145,7 @@ fgレイヤーを読み込み、下図のようにバックドロップを使っ
 4. バックドロップのプロパティで、ラベルを入力
 
 
-BackdropのTipos①
+BackdropのTips①
 ***************
 
 Backdropの色はランダムなので、色を変更したいときは、タイルカラーを設定する。
@@ -179,18 +184,15 @@ PostageStampを使ってReadノードを参照する①
 4. Nukeには、AEのような読み込みファイルを管理するものはないので、このような対応をします。
 
 
+
+
+
 PostageStampを使ってReadノードを参照する②
-***************
-
-Readノードを複製して作った例です。レイヤーのバージョンが更新されたら、下図の中で選択しているノードをすべて更新しなければいけません。
-
-
-PostageStampを使ってReadノードを参照する③
 *************** 
 
 1. Readノードを選択します。
 2. NodeGraphにカーソルを移動し、tab を押します。 
-3. ノードの検索ボックスに「Postage...」と打ち、PostageStampの候補が出てきたら選択します。
+3. ノードの検索ボックスに **Postage...** と打ち、PostageStampの候補が出てきたら選択します。
 
 
 .. figure:: ./../../_images/firstComp/firstComp_013.png
@@ -239,6 +241,13 @@ PostageStampを使ってReadノードを参照する③
 
 Nukeのディフォルトの色を残しておくことで、大まかに何の処理を行っているかが、把握しやすくなります。
 
+.. figure:: ./../../_images/firstComp/firstComp_035.png
+   :scale: 10%
+   :alt: firstComp_035.png
+   :target: path 
+
+
+
 
 レイヤーを重ねる
 *************** 
@@ -266,10 +275,6 @@ Nukeのディフォルトの色を残しておくことで、大まかに何の�
 
 4. Viewerノードに接続し、結果を確認する。
 
-.. figure:: ./../../_images/firstComp/firstComp_020.png
-   :scale: 10%
-   :alt: firstComp_020.png
-   :target: path 
 
 
 分かりやすいノードの並べ方①
@@ -421,6 +426,13 @@ writeノード2
 1. writeノードを追加します。
 2. 書き出すフォルダ/ファイル名を指定します。(ファイル名の拡張子は **mov** にします。)
 3. プロパティの、その他のオプションは必要に応じて変更し、レンダリングを行います。
+
+
+.. figure:: ./../../_images/firstComp/firstComp_036.png
+   :scale: 10%
+   :alt: firstComp_036.png
+   :target: path 
+
 
 
 
