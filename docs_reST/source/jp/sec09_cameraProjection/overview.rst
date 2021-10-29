@@ -3,6 +3,22 @@
 
  **このセクションでは、カメラプロジェクションについて学習します。** 
 
+Project Setting
+***********
+1. NodeGraph上でショットカットキーの **S** を押してProject Settingのプロパティを開きます。
+2. 下図のようにframe range,fps,full size formatの設定を行います。
+
+
+.. figure:: ./../../_images/cameraProjection/cameraProjection_037.png
+   :scale: 10%
+   :alt: cameraProjection_037.png
+
+
+
+
+素材の読み込み
+***********
+
 
  1. まず、始めにノードグラフ上でショートカットキー **R** ボタンで素材を読み込みます。
  2. 読み込むファイルを選択し、Openボタンを押します。
@@ -151,7 +167,7 @@ Cardの作成
 
 
 
-8. 細かく微調節するときは、Cardタブのtranslate, rotate,scaleの数値を変えて位置や大きさを調節します。
+8. 細かく調節するときは、Cardタブのtranslate, rotate,scaleの数値を直接変えて位置や大きさを調節します。
 
 .. figure:: ./../../_images/cameraProjection/cameraProjection_019.png
    :scale: 10%
@@ -162,7 +178,7 @@ Cubeの作成
 ****************
 
 
-1. NodeGraph上でCubeノードをダブルクリックしプロパティを開きuniform scaleを変更し2DViewer上でもCubeが見えるくらいの大きさにします。
+1. NodeGraph上でCubeノードをダブルクリックしプロパティを開きuniform scaleを小さくし2DViewer上でもCubeが見えるくらいの大きさにします。
 
 .. figure:: ./../../_images/cameraProjection/cameraProjection_020.png
    :scale: 10%
@@ -175,7 +191,7 @@ Cubeの作成
 
 
 2. translate,rotakeの値を変更して、Cubeを箱の形に合わせていきます。 
-3. 微調節する場合は、CubuのプロパティCubuの値を変更するかViewer上でCubuについている点をクリックしながら動かします。選択された点は緑になります。
+3. 細かく調節する場合は、CubuのプロパティCubuの値を変更するかViewer上でCubuについている点をクリックしながら動かします。選択された点は緑になります。
 
 
 .. figure:: ./../../_images/cameraProjection/cameraProjection_022.png
@@ -189,7 +205,7 @@ Cubeの作成
 
 
 4. 3DViewer上で確認する場合は、Viewer上でTabを押します。
-5. ViewerのdefaultからCameraを切り替えることが出来ます。
+5. Cameraからの視点で確認したい場合、ViewerのdefaultからCameraを切り替えることが出来ます。
 
 .. figure:: ./../../_images/cameraProjection/cameraProjection_024.png
    :scale: 10%
@@ -201,7 +217,7 @@ Cameraのアニメーション
 
 1. 先程作った、Rendercameraにアニメーションをつけていきます。
 2. 今回は、前後にカメラを動かしていきます。
-3. タイムラインを1フレームにします。
+3. タイムラインを1フレーム目のところに合わせます。
 4. NodeGraph上でCameraRenderをダブルクリックして、プロパティを開きます。
 5. translateとrotakeの右側のボタンをクリックし、Setkeyを押してキーフレームを押します。数値の枠を右クリックでも同様の操作が出来ます。
 
@@ -244,7 +260,7 @@ Cameraのアニメーション
    :alt: cameraProjection_030.png
 
 
-10. タイムラインのフレームを100フレームに移動します。タイムラインの下にある下図のボタンで最終フレームまで移動することが出来ます。
+10. タイムラインのフレームを100フレーム目に移動します。タイムラインの下にある下図のボタンで最終フレームまで移動することが出来ます。
 
 .. figure:: ./../../_images/cameraProjection/cameraProjection_031.png
    :scale: 10%
@@ -257,8 +273,8 @@ Cameraのアニメーション
    :scale: 10%
    :alt: cameraProjection_032.png
 
-12. rotakeも調節していきます。3DViewer上でctrlを押しながら変更もできますが、微調節する場合は、プロパティから直接数値を変更します。
-13. 下図のようにキーフレームが打たれなかった場合薄い青色で表示されます。薄い青色なのは、1フレーム目にキーフレームが打たれているからです。
+12. rotakeも調節していきます。3DViewer上でctrlを押しながら変更もできますが、細かく調節する場合は、プロパティから直接数値を変更します。
+13. 下図のようにそのフレームでキーフレームが打たれなかった場合薄い青色で表示されます。薄い青色なのは、1フレーム目にキーフレームが打たれているからです。
 
 .. figure:: ./../../_images/cameraProjection/cameraProjection_033.png
    :scale: 10%
@@ -266,7 +282,7 @@ Cameraのアニメーション
 
 
 14. RenderCameraのプロパティのProjectionタブを開き、focal lengthを50に変更します。
-15. Viewerじょうで見た時に破損しているフレームがある場合はそのフレームでtranlateの数値を変更しキーフレームを打てば解決できます。
+15. Viewer上で見た時に破損しているフレームがある場合はそのフレームでtranlateの数値を変更しキーフレームを打てば解決できます。
 
 .. figure:: ./../../_images/cameraProjection/cameraProjection_034.png
    :scale: 10%
@@ -282,6 +298,34 @@ Cameraのアニメーション
    :scale: 10%
    :alt: cameraProjection_036.png
 
+
+
+書き出し
+*******
+
+1. ScanlineRenderを選択した状態でNodeGraph上でショートカットキー **W** を押します。
+
+.. figure:: ./../../_images/cameraProjection/cameraProjection_038.png
+   :scale: 10%
+   :alt: cameraProjection_038.png
+
+2.　Writeノードのプロパティを開きfileに書き出し先と拡張子を入力してください。
+
+.. figure:: ./../../_images/cameraProjection/cameraProjection_039.png
+   :scale: 10%
+   :alt: cameraProjection_039.png
+
+
+3. Renderボタンを押し書き出すフレームを確認し、OKボタンを押せば書き出し完了です。
+
+.. figure:: ./../../_images/cameraProjection/cameraProjection_040.png
+   :scale: 10%
+   :alt: cameraProjection_040.png
+
+
+.. figure:: ./../../_images/cameraProjection/cameraProjection_041.png
+   :scale: 10%
+   :alt: cameraProjection_041.png
 
 
 
